@@ -2255,7 +2255,7 @@
 						"ActionType": "CREATE",
 						"OldEntity": null,
 						"NewEntity": {
-							"Name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3",
+							"Name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4",
 							"EntityType": "TABLE",
 							"Namespace": {
 								"DatabaseName": "LakeDatabase1"
@@ -2270,12 +2270,11 @@
 									{
 										"Name": "ID_CONTRIBUINTE",
 										"OriginDataTypeName": {
-											"TypeName": "string",
+											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
-											"Length": 8000,
 											"Properties": {
-												"HIVE_TYPE_STRING": "string"
+												"HIVE_TYPE_STRING": "long"
 											}
 										}
 									},
@@ -2579,11 +2578,11 @@
 									{
 										"Name": "VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA",
 										"OriginDataTypeName": {
-											"TypeName": "long",
+											"TypeName": "float",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "long"
+												"HIVE_TYPE_STRING": "float"
 											}
 										}
 									},
@@ -2704,11 +2703,11 @@
 									{
 										"Name": "PRINCIPAL_FORNECEDOR",
 										"OriginDataTypeName": {
-											"TypeName": "float",
+											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "float"
+												"HIVE_TYPE_STRING": "long"
 											}
 										}
 									},
@@ -2737,11 +2736,11 @@
 									{
 										"Name": "PRINCIPAL_CLIENTE",
 										"OriginDataTypeName": {
-											"TypeName": "float",
+											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "float"
+												"HIVE_TYPE_STRING": "long"
 											}
 										}
 									},
@@ -2770,11 +2769,11 @@
 									{
 										"Name": "CONTADOR_RESPONSAVEL_NFE",
 										"OriginDataTypeName": {
-											"TypeName": "float",
+											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "float"
+												"HIVE_TYPE_STRING": "long"
 											}
 										}
 									},
@@ -3127,8 +3126,8 @@
 									"FormatType": "csv",
 									"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 									"Properties": {
-										"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.csv",
-										"delimiter": "\t",
+										"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4.csv",
+										"delimiter": ",",
 										"multiLine": "false",
 										"firstRowAsHeader": "true",
 										"serialization.format": "1",
@@ -3138,14 +3137,14 @@
 								},
 								"Source": {
 									"Provider": "ADLS",
-									"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.csv",
+									"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4.csv",
 									"Properties": {
 										"LinkedServiceName": "wspocsefazballkms-WorkspaceDefaultStorage",
 										"LocationSetToDatabaseDefault": false
 									}
 								},
 								"Properties": {
-									"textinputformat.record.delimiter": "\t",
+									"textinputformat.record.delimiter": ",",
 									"compression": "",
 									"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 								},
