@@ -16,11 +16,12 @@
 				{
 					"Name": "ID_CONTRIBUINTE",
 					"OriginDataTypeName": {
-						"TypeName": "long",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 256,
 						"Properties": {
-							"HIVE_TYPE_STRING": "long"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
