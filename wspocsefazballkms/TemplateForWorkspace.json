@@ -2273,7 +2273,7 @@
 											"TypeName": "string",
 											"IsComplexType": false,
 											"IsNullable": true,
-											"Length": 256,
+											"Length": 8000,
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
@@ -3160,8 +3160,7 @@
 							},
 							"Retention": 0,
 							"Temporary": false,
-							"IsRewriteEnabled": false,
-							"Partitioning": {}
+							"IsRewriteEnabled": false
 						},
 						"Source": {
 							"Type": "SPARK"
