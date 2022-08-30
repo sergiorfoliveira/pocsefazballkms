@@ -1,7 +1,7 @@
 {
-	"name": "csv_poc_ms_amostra_dataset_2022_08_22_V7",
+	"name": "csv_poc_ms_amostra_dataset_2022_08_22",
 	"properties": {
-		"Name": "csv_poc_ms_amostra_dataset_2022_08_22_V7",
+		"Name": "csv_poc_ms_amostra_dataset_2022_08_22",
 		"EntityType": "TABLE",
 		"Namespace": {
 			"DatabaseName": "LakeDatabase1"
@@ -27,231 +27,252 @@
 				{
 					"Name": "TOTAL_E12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_PRODUTO_E12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_INTERESTADUAIS_E12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_INTERNAS_E12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_ICMS_E12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_S12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_PRODUTO_S12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_INTERESTADUAIS_S12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_INTERNAS_S12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_ICMS_S12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "TOTAL_NFCE_12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "NE12_NS12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "NE12_NFCE12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "D12_NE12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "D12_NS12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "NE3_NE12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "CS_NE12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "A12_NE12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "ARRECADACAO_12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "DECLARADOS_12",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "DECLARACOES_12_PERCENTUAL",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -335,44 +356,48 @@
 				{
 					"Name": "VAL_MEDIO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_DESVIO_PADRAO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_MVA_ANO_CALENDARIO",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_SALDO_FLUXO_FINANCEIRO_EMPRESA",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -415,11 +440,12 @@
 				{
 					"Name": "PESO_PRODUTO_VENDAS",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -438,11 +464,12 @@
 				{
 					"Name": "PESO_PRODUTO_COMPRAS",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -460,22 +487,24 @@
 				{
 					"Name": "PESO_FORNECEDOR",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "PESO_NO_FORNECEDOR",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -493,33 +522,36 @@
 				{
 					"Name": "PESO_CLIENTE",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "PESO_NO_CLIENTE",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "CONTADOR_RESPONSAVEL_NFE",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -625,55 +657,60 @@
 				{
 					"Name": "VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_MEDIO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_DESVIO_PADRAO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_MVA_ANO_CALENDARIO_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_SALDO_FLUXO_FINANCEIRO_EMPRESA_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -779,55 +816,60 @@
 				{
 					"Name": "VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA_C",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_MEDIO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES_C",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_DESVIO_PADRAO_ARRECADACAO_ICMS_ULTIMO_DOZE_MES_C",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_MVA_ANO_CALENDARIO_C",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
 				{
 					"Name": "VAL_SALDO_FLUXO_FINANCEIRO_EMPRESA_C",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -845,11 +887,12 @@
 				{
 					"Name": "MT_RANDOM",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -872,7 +915,7 @@
 				"FormatType": "csv",
 				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 				"Properties": {
-					"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/csv-poc-ms-amostra-dataset-2022-08-22_V7.csv",
+					"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/csv-poc-ms-amostra-dataset-2022-08-22.csv",
 					"delimiter": ",",
 					"multiLine": "false",
 					"firstRowAsHeader": "true",
@@ -883,7 +926,7 @@
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/csv-poc-ms-amostra-dataset-2022-08-22_V7.csv",
+				"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/csv-poc-ms-amostra-dataset-2022-08-22.csv",
 				"Properties": {
 					"LinkedServiceName": "wspocsefazballkms-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": false
@@ -891,7 +934,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"compression": "",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
