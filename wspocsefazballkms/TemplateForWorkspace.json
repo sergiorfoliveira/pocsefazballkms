@@ -3126,7 +3126,7 @@
 									"FormatType": "csv",
 									"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 									"Properties": {
-										"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.txt",
+										"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.csv",
 										"delimiter": "\t",
 										"multiLine": "false",
 										"firstRowAsHeader": "true",
@@ -3137,7 +3137,7 @@
 								},
 								"Source": {
 									"Provider": "ADLS",
-									"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.txt",
+									"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v3.csv",
 									"Properties": {
 										"LinkedServiceName": "wspocsefazballkms-WorkspaceDefaultStorage",
 										"LocationSetToDatabaseDefault": false
