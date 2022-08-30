@@ -1,0 +1,138 @@
+{
+	"name": "Notebook 2",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "sparkpool1",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "bebca737-82b9-456e-92fd-0aeb67f5719b"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "python"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/5dbd4eba-831b-499f-ac29-f8034f97fb9d/resourceGroups/rgpocsefazballkms/providers/Microsoft.Synapse/workspaces/wspocsefazballkms/bigDataPools/sparkpool1",
+				"name": "sparkpool1",
+				"type": "Spark",
+				"endpoint": "https://wspocsefazballkms.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool1",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"automaticScaleJobs": true
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"import azureml.core\n",
+					"\n",
+					"from azureml.core import Experiment, Workspace, Dataset, Datastore\n",
+					"from azureml.train.automl import AutoMLConfig\n",
+					"from notebookutils import mssparkutils\n",
+					"from azureml.data.dataset_factory import TabularDatasetFactory"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"linkedService_name = \"AzureMLService1\"\n",
+					"experiment_name = \"wspocsefazballkms-csv_poc_ms_amostra_dataset_2022_08_22_V7-20220830055501\"\n",
+					"\n",
+					"ws = mssparkutils.azureML.getWorkspace(linkedService_name)\n",
+					"experiment = Experiment(ws, experiment_name)"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"df = spark.sql(\"SELECT * FROM LakeDatabase1.csv_poc_ms_amostra_dataset_2022_08_22_V7\")\n",
+					"\n",
+					"datastore = Datastore.get_default(ws)\n",
+					"dataset = TabularDatasetFactory.register_spark_dataframe(df, datastore, name = experiment_name + \"-dataset\")"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"automl_config = AutoMLConfig(spark_context = sc,\n",
+					"                             task = \"classification\",\n",
+					"                             training_data = dataset,\n",
+					"                             label_column_name = \"TARGET\",\n",
+					"                             primary_metric = \"accuracy\",\n",
+					"                             experiment_timeout_hours = 3,\n",
+					"                             max_concurrent_iterations = 2,\n",
+					"                             enable_onnx_compatible_models = False)"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"run = experiment.submit(automl_config)"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"displayHTML(\"<a href={} target='_blank'>Your experiment in Azure Machine Learning portal: {}</a>\".format(run.get_portal_url(), run.id))"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"run.wait_for_completion()\n",
+					"\n",
+					"import mlflow\n",
+					"\n",
+					"# Get best model from automl run\n",
+					"best_run, non_onnx_model = run.get_output()\n",
+					"\n",
+					"artifact_path = experiment_name + \"_artifact\"\n",
+					"\n",
+					"mlflow.set_tracking_uri(ws.get_mlflow_tracking_uri())\n",
+					"mlflow.set_experiment(experiment_name)\n",
+					"\n",
+					"with mlflow.start_run() as run:\n",
+					"    # Save the model to the outputs directory for capture\n",
+					"    mlflow.sklearn.log_model(non_onnx_model, artifact_path)\n",
+					"\n",
+					"    # Register the model to AML model registry\n",
+					"    mlflow.register_model(\"runs:/\" + run.info.run_id + \"/\" + artifact_path, \"wspocsefazballkms-csv_poc_ms_amostra_dataset_2022_08_22_V7-20220830055501-Best\")"
+				],
+				"execution_count": null
+			}
+		]
+	}
+}
