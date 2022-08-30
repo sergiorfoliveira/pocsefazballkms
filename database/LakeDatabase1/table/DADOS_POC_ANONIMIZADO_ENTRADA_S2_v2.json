@@ -1,7 +1,7 @@
 {
-	"name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2",
+	"name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2",
 	"properties": {
-		"Name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2",
+		"Name": "DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2",
 		"EntityType": "TABLE",
 		"Namespace": {
 			"DatabaseName": "LakeDatabase1"
@@ -872,7 +872,7 @@
 				"FormatType": "csv",
 				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 				"Properties": {
-					"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2.csv",
+					"path": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2.csv",
 					"delimiter": ",",
 					"multiLine": "false",
 					"firstRowAsHeader": "true",
@@ -883,7 +883,7 @@
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2.csv",
+				"Location": "abfss://fspocsefazballkms@sapocsefazballkms.dfs.core.windows.net/datalake01/DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2.csv",
 				"Properties": {
 					"LinkedServiceName": "wspocsefazballkms-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": false
@@ -891,7 +891,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"compression": "",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
