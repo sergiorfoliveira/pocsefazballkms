@@ -8,14 +8,14 @@
 		"wspocsefazballkms-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"wspocsefazballkms-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://sapocsefazballkms.dfs.core.windows.net"
-		},
 		"AzureMLService1_properties_typeProperties_subscriptionId": {
 			"value": "5dbd4eba-831b-499f-ac29-f8034f97fb9d"
 		},
 		"AzureMLService1_properties_typeProperties_resourceGroupName": {
 			"value": "rgpocsefazballkms"
+		},
+		"wspocsefazballkms-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://sapocsefazballkms.dfs.core.windows.net"
 		}
 	}
 }
