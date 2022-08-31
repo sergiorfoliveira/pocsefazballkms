@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "SELECT COUNT (DISTINCT [ID_CONTRIBUINTE])\n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "LakeDatabase1",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

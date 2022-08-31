@@ -16,11 +16,12 @@
 				{
 					"Name": "ID_CONTRIBUINTE",
 					"OriginDataTypeName": {
-						"TypeName": "long",
+						"TypeName": "string",
 						"IsComplexType": false,
 						"IsNullable": true,
+						"Length": 8000,
 						"Properties": {
-							"HIVE_TYPE_STRING": "long"
+							"HIVE_TYPE_STRING": "string"
 						}
 					}
 				},
@@ -891,7 +892,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
