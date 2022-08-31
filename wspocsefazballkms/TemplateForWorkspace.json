@@ -2578,11 +2578,11 @@
 									{
 										"Name": "VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA",
 										"OriginDataTypeName": {
-											"TypeName": "float",
+											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "float"
+												"HIVE_TYPE_STRING": "long"
 											}
 										}
 									},
@@ -3318,7 +3318,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT DISTINCT(CONTADOR_RESPONSAVEL_NFE) \n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4]\n\n ",
+					"query": "SELECT DISTINCT(VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA) \n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4]\n\n",
 					"metadata": {
 						"language": "sql"
 					},
@@ -3338,7 +3338,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT DISTINCT(CONTADOR_RESPONSAVEL_NFE) \n  FROM [LakeDatabase1].[dbo].[csv_poc_ms_amostra_dataset_2022_08_22_V7]",
+					"query": "SELECT DISTINCT(VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA) \n  FROM [LakeDatabase1].[dbo].[csv_poc_ms_amostra_dataset_2022_08_22_V7]",
 					"metadata": {
 						"language": "sql"
 					},
