@@ -625,11 +625,11 @@
 				{
 					"Name": "VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA_F",
 					"OriginDataTypeName": {
-						"TypeName": "float",
+						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Properties": {
-							"HIVE_TYPE_STRING": "float"
+							"HIVE_TYPE_STRING": "long"
 						}
 					}
 				},
