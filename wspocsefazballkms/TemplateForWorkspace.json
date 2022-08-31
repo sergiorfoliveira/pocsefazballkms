@@ -2270,11 +2270,12 @@
 									{
 										"Name": "ID_CONTRIBUINTE",
 										"OriginDataTypeName": {
-											"TypeName": "long",
+											"TypeName": "string",
 											"IsComplexType": false,
 											"IsNullable": true,
+											"Length": 8000,
 											"Properties": {
-												"HIVE_TYPE_STRING": "long"
+												"HIVE_TYPE_STRING": "string"
 											}
 										}
 									},
@@ -3145,7 +3146,7 @@
 								},
 								"Properties": {
 									"textinputformat.record.delimiter": ",",
-									"compression": "",
+									"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 									"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 								},
 								"Compressed": false,
@@ -3159,7 +3160,8 @@
 							},
 							"Retention": 0,
 							"Temporary": false,
-							"IsRewriteEnabled": false
+							"IsRewriteEnabled": false,
+							"Partitioning": {}
 						},
 						"Source": {
 							"Type": "SPARK"
@@ -3338,6 +3340,26 @@
 			"properties": {
 				"content": {
 					"query": "SELECT DISTINCT(VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA) \n  FROM [LakeDatabase1].[dbo].[csv_poc_ms_amostra_dataset_2022_08_22_V7]",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"databaseName": "LakeDatabase1",
+						"poolName": "Built-in"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/SQL script 5')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "SELECT COUNT (DISTINCT [ID_CONTRIBUINTE])\n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v2]",
 					"metadata": {
 						"language": "sql"
 					},
