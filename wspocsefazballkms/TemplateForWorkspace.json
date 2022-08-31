@@ -2270,11 +2270,11 @@
 									{
 										"Name": "ID_CONTRIBUINTE",
 										"OriginDataTypeName": {
-											"TypeName": "float",
+											"TypeName": "integer",
 											"IsComplexType": false,
 											"IsNullable": true,
 											"Properties": {
-												"HIVE_TYPE_STRING": "float"
+												"HIVE_TYPE_STRING": "integer"
 											}
 										}
 									},
