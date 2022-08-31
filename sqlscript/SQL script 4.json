@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "SELECT DISTINCT(CONTADOR_RESPONSAVEL_NFE) \n  FROM [LakeDatabase1].[dbo].[csv_poc_ms_amostra_dataset_2022_08_22_V7]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "LakeDatabase1",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

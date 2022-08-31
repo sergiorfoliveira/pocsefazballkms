@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT DISTINCT(CONTADOR_RESPONSAVEL_NFE) \n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4]\n\n ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "LakeDatabase1",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
