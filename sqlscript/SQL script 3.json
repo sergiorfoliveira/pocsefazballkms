@@ -2,7 +2,7 @@
 	"name": "SQL script 3",
 	"properties": {
 		"content": {
-			"query": "SELECT DISTINCT(CONTADOR_RESPONSAVEL_NFE) \n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4]\n\n ",
+			"query": "SELECT DISTINCT(VAL_CAPITAL_SOCIAL_DECLARADO_EMPRESA) \n FROM [LakeDatabase1].[dbo].[DADOS_POC_ANONIMIZADO_ENTRADA_S2_v4]\n\n",
 			"metadata": {
 				"language": "sql"
 			},
